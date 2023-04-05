@@ -18,10 +18,10 @@ class Home extends StatefulWidget {
 class _HomePageState extends State<Home> {
     int indexTap = 0;
 
-  final List<Widget> widgetsChildren = const [
-    HomeScreen(),
-    SearchScreen(),
-    Profile(),
+  final List<Widget> widgetsChildren =  [
+    const HomeScreen(),
+    const RealtimeDatabase(),
+    const Profile(),
   ];
 
   

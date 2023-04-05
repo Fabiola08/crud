@@ -66,19 +66,29 @@ class _ProfileState extends State<Profile> {
                     iconColor: Colors.white,
                     onTap: () {},
                   ),
+
+                  const SizedBox(height: 20),
+
                   ListTile(
                     leading: const Icon(Icons.headset_mic),
                     title: const Text('Soporte'),
                     textColor: Colors.white,
                     iconColor: Colors.white,
                     onTap: () {},
-                  ),ListTile(
+                  ),
+                  
+                  const SizedBox(height: 20),
+                  
+                  ListTile(
                     leading: const Icon(Icons.receipt),
                     title: const Text('Privacidad'),
                     textColor: Colors.white,
                     iconColor: Colors.white,
                     onTap: () {},
                   ),
+
+                  const SizedBox(height: 20),
+
                   ListTile(
                     leading: const Icon(Icons.info_outline),
                     title: const Text('Info'),
@@ -86,6 +96,26 @@ class _ProfileState extends State<Profile> {
                     iconColor: Colors.white,
                     onTap: () {},
                   ),
+
+                  const SizedBox(height: 20),
+
+                  ListTile(
+                    leading: const Icon(Icons.share),
+                    title: const Text('Compartir'),
+                    textColor: Colors.white,
+                    iconColor: Colors.white,
+                    onTap: () {},
+                  ),
+
+                  const SizedBox(height: 20),
+
+                  // ListTile(
+                  //   leading: const Icon(Icons.info_outline),
+                  //   title: const Text('Info'),
+                  //   textColor: Colors.white,
+                  //   iconColor: Colors.white,
+                  //   onTap: () {},
+                  // ),
                 ],
               ),
             )
