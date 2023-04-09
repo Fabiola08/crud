@@ -1,5 +1,6 @@
 
 
+import 'package:crud/pages/info_page.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
@@ -71,6 +72,16 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.green,
+          child: const Icon(Icons.info),
+          onPressed: (){
+           Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const InfoPage()),
+            );
+          },
+        ),
       body: Container(
         height: double.infinity,
         child: FirebaseAnimatedList(

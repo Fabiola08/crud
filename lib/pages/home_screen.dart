@@ -1,3 +1,4 @@
+import 'package:crud/pages/info_page.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -5,7 +6,20 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+        // FloatingActionButton(
+        //   backgroundColor: Colors.green,
+        //   child: const Icon(Icons.info),
+        //   onPressed: (){
+        //    Navigator.push(
+        //     context,
+        //     MaterialPageRoute(builder: (context) => const InfoPage()),
+        //     );
+        //   },
+        // ),
+      ]
+    );
     
   }
 }

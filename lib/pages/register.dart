@@ -99,7 +99,7 @@ class _RegisterState extends State<Register> {
       ),
     );
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 247, 244, 244),
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
         //title: const Text("Formulario de registro"),
         backgroundColor: const Color.fromARGB(255, 60, 203, 65),
@@ -116,41 +116,43 @@ class _RegisterState extends State<Register> {
           ),
               const SizedBox(height: 10),
 const Text(
-                'Bienvenido',
+                'Bienvenido al registro de usuario',
                 style: TextStyle(
                   color: Color.fromARGB(255, 0, 0, 0),
                   fontSize: 15,
                 ),
               ),
               // name textfield
-               const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25.0),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Divider(
-                        thickness: 0.5,
-                        color: Color.fromARGB(255, 255, 0, 0),
-                      ),
-                    ),
+              //  const Padding(
+              //   padding: EdgeInsets.symmetric(horizontal: 25.0),
+              //   child: Row(
+              //     children: [
+              //       Expanded(
+              //         child: Divider(
+              //           thickness: 0.5,
+              //           color: Color.fromARGB(255, 255, 0, 0),
+              //         ),
+              //       ),
                     
-                    Expanded(
-                      child: Divider(
-                        thickness: 0.5,
-                        color: Color.fromARGB(255, 60, 203, 65),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              //       Expanded(
+              //         child: Divider(
+              //           thickness: 0.5,
+              //           color: Color.fromARGB(255, 60, 203, 65),
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
 
-              const SizedBox(height: 10),
+              const SizedBox(height: 15),
 
               // username textfield
               MyTextField(
                 controller: emailController,
                 hintText: 'Correo',
                 obscureText: false,
+                //+
+                //prefixIcon: const Icon(Icons.email),
               ),
              
 
@@ -161,6 +163,7 @@ const Text(
                 controller: locationController,
                 hintText: 'Localidad',
                 obscureText: false,
+                //prefixIcon: const Icon(Icons.location_on),
               ),
 
               const SizedBox(height: 10),
@@ -170,6 +173,7 @@ const Text(
                 controller: passController,
                 hintText: 'Contraseña',
                 obscureText: true,
+                //prefixIcon: const Icon(Icons.lock),
               ),
 
               const SizedBox(height: 10),
@@ -179,6 +183,7 @@ const Text(
                 controller: confirmationController,
                 hintText: 'Confirme su contraseña',
                 obscureText: true,
+                //prefixIcon: const Icon(Icons.lock),
               ),
 
               const SizedBox(height: 30),
@@ -191,19 +196,25 @@ const Text(
                   onTap: signUserUp, 
                 ),
                 
-                
+                const SizedBox(height: 20),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                     const Text('¿Ya tiene una cuenta?',
+                     style: TextStyle(color: Colors.black),
+                     ),
+                    const SizedBox(width: 5),
+                    GestureDetector(
+                      onTap: widget.onTap,
+                      child: const Text('Iniciar sesión', style: TextStyle(color: Color.fromARGB(255, 60, 203, 65), fontWeight: FontWeight.bold),),
+                    )
+                  ],
+                )
                 ],
               ),
-            
           ),
         ),
-      //   floatingActionButton: FloatingActionButton(
-      //   backgroundColor: Colors.green,
-      //   child: const Icon(Icons.keyboard_return),
-      //   onPressed: () {
-      //     Navigator.pop(context);
-      //   },
-      // ),
       );
   }
 }

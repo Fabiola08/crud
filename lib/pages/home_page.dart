@@ -1,5 +1,6 @@
 import 'package:crud/pages/home_screen.dart';
 import 'package:crud/pages/profile.dart';
+import 'package:crud/pages/profile_screen.dart';
 import 'package:crud/pages/search_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -21,13 +22,13 @@ class _HomePageState extends State<Home> {
   final List<Widget> widgetsChildren =  [
     const HomeScreen(),
     const RealtimeDatabase(),
-    const Profile(),
+    //const ProfileScreen(),
   ];
 
   
   final colors = [
     Colors.black,
-    Colors.green,
+    Colors.black,
     Colors.black,
   ];
 

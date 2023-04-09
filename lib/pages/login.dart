@@ -69,6 +69,7 @@ class _LoginState extends State<Login> {
      decoration: BoxDecoration(
       shape: BoxShape.circle,
         image: DecorationImage(
+           alignment: Alignment.center,
            image: AssetImage(pathImage),
          ),
       ),
@@ -101,11 +102,11 @@ class _LoginState extends State<Login> {
                 ),
                   //user name
                   Padding(
-                    padding: const EdgeInsets.only(top: 8, bottom: 4),
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
                     child: TextFormField(
                       controller: emailController,
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.person),
+                        //prefixIcon: Icon(Icons.email),
                         border: OutlineInputBorder(),
                         hintText: 'Correo',
                       ),
@@ -124,13 +125,13 @@ class _LoginState extends State<Login> {
                   
                   
                   Padding(
-                    padding: const EdgeInsets.only(top: 10, bottom: 4),
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
                     child: TextFormField(
                       controller: passController,
                       obscureText: true,
                       obscuringCharacter: "*",
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.lock),
+                        //prefixIcon: Icon(Icons.lock),
                         border: OutlineInputBorder(),
                         hintText: 'Contraseña',
                       ),
