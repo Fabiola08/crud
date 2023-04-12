@@ -27,19 +27,19 @@ class _ProfileState extends State<Profile> {
     return SafeArea(
       child: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 35.0),
+          const Padding(
+            padding:  EdgeInsets.only(left: 20.0, right: 20.0, top: 35.0),
             child: Row(
               children: [
-                const Icon(
+                 Icon(
                   Icons.person,
                   size: 70.0,
                 ),
-                const SizedBox(
+                 SizedBox(
                   width: 30.0,
                 ),
-                Text("Usuario",
-                style: TextStyle(),
+                Text("Air Quality",
+                style: TextStyle(fontSize: 24.0),
                 ),
               ],
             ),
@@ -50,7 +50,7 @@ class _ProfileState extends State<Profile> {
           Expanded(
             child: Container(
               decoration: const BoxDecoration(
-                color: Color.fromARGB(255, 33, 33, 33),
+                color: Color.fromRGBO(0, 0, 0, 0.914),
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(20.0),
                   topLeft: Radius.circular(20.0),

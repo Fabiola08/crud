@@ -72,16 +72,16 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.green,
-          child: const Icon(Icons.info),
-          onPressed: (){
-           Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const InfoPage()),
-            );
-          },
-        ),
+      // floatingActionButton: FloatingActionButton(
+      //     backgroundColor: Colors.green,
+      //     child: const Icon(Icons.info),
+      //     onPressed: (){
+      //      Navigator.push(
+      //       context,
+      //       MaterialPageRoute(builder: (context) => const InfoPage()),
+      //       );
+      //     },
+      //   ),
       body: Container(
         height: double.infinity,
         child: FirebaseAnimatedList(

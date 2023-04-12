@@ -22,6 +22,7 @@ class _HomePageState extends State<Home> {
   final List<Widget> widgetsChildren =  [
     const HomeScreen(),
     const RealtimeDatabase(),
+    const Profile(),
     //const ProfileScreen(),
   ];
 
