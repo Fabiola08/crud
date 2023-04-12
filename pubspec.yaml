@@ -47,6 +47,8 @@ dependencies:
   flutter_onboarding: ^0.0.9
   intl: ^0.18.0
   google_fonts: ^4.0.3
+  fluttertoast: ^8.2.1
+  animate_do: ^3.0.2
   
 
 dev_dependencies:
