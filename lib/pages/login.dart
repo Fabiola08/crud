@@ -62,7 +62,7 @@ class _LoginState extends State<Login> {
      final logoPic = Container(
       margin: const EdgeInsets.only(
          top: 30.0,
-        left: 80.0,
+         left: 70.0,
       ),
       width: 210,
      height: 200.0,

@@ -16,17 +16,17 @@ Future<List>getUsers() async {
     };
     users.add(person);
   }
-  return users;
-
-  //CollectionReference collectionReferenceUsers = db.collection('users');
-
-  //QuerySnapshot queryUsers = await collectionReferenceUsers.get();
-
-  //queryUsers.docs.forEach((documento) { 
-   // users.add(documento.data());
-  //});
-  //await Future.delayed(const Duration(seconds:5 ));
   //return users;
+
+  CollectionReference collectionReferenceUsers = db.collection('users');
+
+  QuerySnapshot queryUsers = await collectionReferenceUsers.get();
+
+  queryUsers.docs.forEach((documento) { 
+   users.add(documento.data());
+  });
+  await Future.delayed(const Duration(seconds:5 ));
+ return users;
 
 }
 

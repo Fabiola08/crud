@@ -22,6 +22,7 @@ class _ProfileState extends State<Profile> {
     FirebaseAuth.instance.signOut();
   }
 
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -109,13 +110,13 @@ class _ProfileState extends State<Profile> {
 
                   const SizedBox(height: 20),
 
-                  // ListTile(
-                  //   leading: const Icon(Icons.info_outline),
-                  //   title: const Text('Info'),
-                  //   textColor: Colors.white,
-                  //   iconColor: Colors.white,
-                  //   onTap: () {},
+                  //  ListTile(
+                  //  leading: const Icon(Icons.output),
+                  //  title: const Text('Salir'),
+                  //  textColor: Colors.white,
+                  //  iconColor: Colors.white,
                   // ),
+                  
                 ],
               ),
             )

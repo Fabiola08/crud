@@ -14,16 +14,16 @@ class HomeScreen extends StatelessWidget {
     var size = MediaQuery.of(context).size;
 
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.green,
-          child: const Icon(Icons.info),
-          onPressed: (){
-           Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const InfoPage()),
-            );
-          },
-        ),
+      //  floatingActionButton: FloatingActionButton(
+      //     backgroundColor: Colors.green,
+      //     child: const Icon(Icons.info),
+      //     onPressed: (){
+      //       Navigator.push(
+      //       context,
+      //       MaterialPageRoute(builder: (context) => const InfoPage()),
+      //       );
+      //     },
+      //   ),
     body: Column(
       children: [
         Stack(
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
               child: Container(
                 height: 70,
                 width: size.width * .9,
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.all(5),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(8))),
@@ -62,8 +62,7 @@ class HomeScreen extends StatelessWidget {
                     Row(
                       children: [
                         Container(
-                          padding: EdgeInsets.all(8
-                          ),
+                          padding: EdgeInsets.all(5),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(100),
                               border: Border.all(
@@ -83,10 +82,10 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Text(
                               "Air Quality",
-                              style: TextStyle(fontSize: 11.0),
+                              style: TextStyle(fontSize: 10.0),
                             ),
                             Text("Vista nuestra pagina web",
-                            style: TextStyle(fontSize: 10.0),
+                            style: TextStyle(fontSize: 9.0),
                             ),
                           ],
                         )
@@ -95,7 +94,7 @@ class HomeScreen extends StatelessWidget {
                     Row(
                       children: [
                         Container(
-                          padding: EdgeInsets.all(10),
+                          padding: EdgeInsets.all(5),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(100),
                               border: Border.all(
@@ -114,10 +113,10 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Text(
                                 "¡Contáctanos!",
-                              style: TextStyle(fontSize: 11.0),
+                              style: TextStyle(fontSize: 10.0),
                             ),
                             Text("El cambio inicia contigo",
-                            style: TextStyle(fontSize: 10.0),
+                            style: TextStyle(fontSize: 9.0),
                             )
                           ],
                         )

@@ -15,38 +15,38 @@ class RealtimeDatabase extends StatefulWidget {
 class _RealtimeDatabaseState extends State<RealtimeDatabase> {
 
  Query dbRef = FirebaseDatabase.instance.ref().child('Test');
- DatabaseReference reference = FirebaseDatabase.instance.ref().child('Test');
+ DatabaseReference reference = FirebaseDatabase.instance.ref().child('test');
 
  Widget listItem({required Map test}) {
     return Container(
-      margin: const EdgeInsets.all(10),
-      padding: const EdgeInsets.all(10),
-      height: 260,
+      margin: const EdgeInsets.only(right: 20.0, left: 20.0,top: 30.0),
+      padding: const EdgeInsets.only(left: 58),
+      height: 270,
       color: Colors.green,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('Medida analógica'),
+          const Text('Medida analógica',),
           Text(
-            test['analogica'].toString(),
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+            test['Medida Analógica'].toString(),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
           const SizedBox(
             height: 15,
           ),
-          const Text('Voltaje'),
+          const Text('Velocidad'),
           Text(
-            test['voltaje'].toString(),
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+            test['Velocidad'].toString(),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
           const SizedBox(
             height: 15,
           ),
            const Text('cO2'),
           Text(
-            test['cO2'].toString(),
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+            test['C02'].toString(),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
           const SizedBox(
             height: 15,
@@ -54,7 +54,7 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
            const Text('Humedad'),
           Text(
             test['humedad'].toString(),
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
           const SizedBox(
             height: 15,
@@ -62,7 +62,7 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
            const Text('Temperatura'),
           Text(
             test['temperatura'].toString(),
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
         ],
       ),
@@ -72,16 +72,16 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // floatingActionButton: FloatingActionButton(
-      //     backgroundColor: Colors.green,
-      //     child: const Icon(Icons.info),
-      //     onPressed: (){
-      //      Navigator.push(
-      //       context,
-      //       MaterialPageRoute(builder: (context) => const InfoPage()),
-      //       );
-      //     },
-      //   ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.green,
+          child: const Icon(Icons.info),
+          onPressed: (){
+            Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const InfoPage()),
+            );
+         },
+       ),
       body: Container(
         height: double.infinity,
         child: FirebaseAnimatedList(

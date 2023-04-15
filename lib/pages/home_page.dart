@@ -1,4 +1,5 @@
 import 'package:crud/pages/home_screen.dart';
+import 'package:crud/pages/info_page.dart';
 import 'package:crud/pages/profile.dart';
 import 'package:crud/pages/profile_screen.dart';
 import 'package:crud/pages/search_screen.dart';
@@ -22,8 +23,8 @@ class _HomePageState extends State<Home> {
   final List<Widget> widgetsChildren =  [
     const HomeScreen(),
     const RealtimeDatabase(),
-    const Profile(),
-    //const ProfileScreen(),
+    //const Profile(),
+     ProfileScreen(),
   ];
 
   
@@ -41,12 +42,23 @@ class _HomePageState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        //  actions:[ FloatingActionButton(
+        //   backgroundColor: Colors.green,
+        //   child: const Icon(Icons.info),
+        //   onPressed: (){
+        //    Navigator.push(
+        //     context,
+        //     MaterialPageRoute(builder: (context) => const InfoPage()),
+        //     );
+        //   },
+        // ),
+        //  ],
         actions: [
-          IconButton(
-            onPressed: signUserOut, 
-            icon: const Icon(Icons.logout),
-          )
-        ],
+         IconButton(
+           onPressed: signUserOut, 
+           icon: const Icon(Icons.logout),
+        )
+      ],
         title: const Text('Air Quality',
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
         centerTitle: true,
@@ -78,7 +90,7 @@ class _HomePageState extends State<Home> {
             ),
             GButton(
               icon: Icons.person,
-              text: 'Profile',
+              text: 'Perfil',
               iconActiveColor: Colors.white,
               textColor: Colors.white,
             ),
