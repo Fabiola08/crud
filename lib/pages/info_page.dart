@@ -10,7 +10,7 @@ class InfoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Elementos a medir'),
+        title: const Text('A cerca de la calidad del aire'),
         backgroundColor: Colors.green,
       ),
        body: const SingleChildScrollView(
@@ -18,9 +18,24 @@ class InfoPage extends StatelessWidget {
           padding: EdgeInsets.all(15),
           child: Column(
             children: [
+              Text('¿Qué es la calidad del aire? ',
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 18),
+                textAlign: TextAlign.center),
+              
+              SizedBox(height: 8.0),
+
+              Text('La calidad del aire trata de la composición del aire y de la idoneidad del éste para determinadas aplicaciones.',
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 16),
+                textAlign: TextAlign.start),
+              
+              SizedBox(height: 10.0),
               Text('¿Qué es CO2?',
               style: TextStyle(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 fontSize: 18),
                 textAlign: TextAlign.center),
               
@@ -28,7 +43,7 @@ class InfoPage extends StatelessWidget {
 
                 Text("Se hace referencia a un gas incoloro y soluble en agua, cuyas moléculas se componen por un átomo de carbono y dos de oxígeno, unidos por enlaces dobles covalentes. La importancia biológica del CO2 radica principalmente en que las plantas lo necesitan para llevar a cabo la fotosíntesis, así como cierto tipo de cyanobacterias para sus procesos de obtención de energía.",
                 style: TextStyle(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 fontSize: 16),
                 textAlign: TextAlign.start),
 
@@ -36,7 +51,7 @@ class InfoPage extends StatelessWidget {
 
                 Text('¿Qué es la Temperatura?',
               style: TextStyle(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 fontSize: 18),
                 textAlign: TextAlign.center),
               
@@ -44,7 +59,7 @@ class InfoPage extends StatelessWidget {
 
                 Text("La temperatura es una magnitud escalar que se define como la cantidad de energía cinética de las partículas de una masa gaseosa, líquida o sólida. Cuanto mayor es la velocidad de las partículas, mayor es la temperatura y viceversa.",
                 style: TextStyle(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 fontSize: 16),
                 textAlign: TextAlign.start),
 
@@ -52,7 +67,7 @@ class InfoPage extends StatelessWidget {
 
                 Text('¿Qué es Humedad?',
               style: TextStyle(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 fontSize: 18),
                 textAlign: TextAlign.center),
               
@@ -60,7 +75,7 @@ class InfoPage extends StatelessWidget {
 
                 Text("La humedad es la cantidad de vapor de agua que contiene el aire. Siempre hay vapor de agua en el aire y la cantidad varía según diversos factores, por ejemplo, si recién llovió, si se está cerca del mar, si hay o no vegetación en el terreno, la temperatura del aire, entre otros.",
                 style: TextStyle(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w400,
                 fontSize: 16),
                 textAlign: TextAlign.start),
 

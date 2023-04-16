@@ -38,49 +38,89 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Text('Medida analógica',
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
-          Text(
-            test['Medida Analógica'].toString(),
+          Row(
+             children: [
+              Icon(Icons.co2),
+              SizedBox(width: 8,),
+               const Text('cO2',
+               style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500)),
+               SizedBox(width: 110,),
+               Text(
+            '${test['C02']}  ppm',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
+             ],
+           ),
+          
           const SizedBox(
-            height: 15,
+            height: 20,
+          ),
+          Row(
+            children: [
+              Icon(Icons.gas_meter),
+              SizedBox(width: 8,),
+              const Text('Gas',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500)),
+              SizedBox(width: 170,),
+              Text(
+            '${test['Medida Analógica']} ppm',
+            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+          ),
+            ],
           ),
           
-          const Text('Velocidad',
-          style:  TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
-          Text(
-            test['Velocidad'].toString(),
+          const SizedBox(
+            height: 20,
+          ),
+          
+          Row(
+            children: [
+              Icon(Icons.speed),
+              SizedBox(width: 8,),
+              const Text('Velocidad',
+              style:  TextStyle(fontSize: 20, fontWeight: FontWeight.w500)),
+              SizedBox(width: 85,),
+              Text(
+            '${test['Velocidad']} m/s',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
+            ],
+          ),
+          
           const SizedBox(
-            height: 15,
+            height: 20,
           ),
-           const Text('cO2',
-           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
-          Text(
-            '${test['C02']}  PPM',
-            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
-          ),
-          const SizedBox(
-            height: 15,
-          ),
-          const Text('Humedad',
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
-          Text(
-            '${test['humedad']}  %',
+           
+          Row(
+            children: [
+              Icon(Icons.water_drop),
+              SizedBox(width: 8,),
+              const Text('Humedad',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500)),
+              SizedBox(width: 150,),
+              Text(
+            '${test['Humedad']} %',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ), 
-          const SizedBox(
-            height: 15,
+            ],
           ),
-           const Text('Temperatura',
-           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
-          Text(
-            '${test['temperatura']} °C',
+          
+          const SizedBox(
+            height: 20,
+          ),
+           Row(
+             children: [
+              Icon(Icons.device_thermostat),
+               const Text('Temperatura',
+               style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500)),
+               SizedBox(width: 112,),
+               Text(
+            '${test['Temperatura']} °C',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
+             ],
+           ),
+          
         ],
       ),
     );
