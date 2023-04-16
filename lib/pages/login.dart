@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:crud/widgets/button.dart';
@@ -81,8 +83,16 @@ class _LoginState extends State<Login> {
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 60, 203, 65),
+        // flexibleSpace: ClipRect(
+        //   child: BackdropFilter(
+        //     filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+        //     child: Container(color: Colors.transparent),
+        //     ),
+        //   ),
+        //   elevation: 0,
+        //   backgroundColor: Colors.white,
           //title: const Text('Login'),
+          backgroundColor: Colors.green,
         ),
         body: SingleChildScrollView(
           child: Padding(

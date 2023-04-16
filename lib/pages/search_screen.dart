@@ -4,6 +4,7 @@ import 'package:crud/pages/info_page.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_gauges/gauges.dart';
 
 class RealtimeDatabase extends StatefulWidget {
     const RealtimeDatabase ({Key? key}) : super(key: key);
@@ -20,14 +21,25 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
  Widget listItem({required Map test}) {
     return Container(
       margin: const EdgeInsets.only(right: 20.0, left: 20.0,top: 30.0),
-      padding: const EdgeInsets.only(left: 58),
+      padding: const EdgeInsets.all(5.0),
       height: 270,
-      color: Colors.green,
+      decoration: const BoxDecoration(
+        color: Colors.green,
+        borderRadius: BorderRadius.all(Radius.circular(20.0)), 
+        boxShadow: <BoxShadow>[
+          BoxShadow (
+            color: Colors.black38,
+            blurRadius: 18.0,
+            offset: Offset(0.0, 8.0),
+          ),
+        ]
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const Text('Medida analógica',),
+          const Text('Medida analógica',
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
           Text(
             test['Medida Analógica'].toString(),
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
@@ -35,7 +47,9 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
           const SizedBox(
             height: 15,
           ),
-          const Text('Velocidad'),
+          
+          const Text('Velocidad',
+          style:  TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
           Text(
             test['Velocidad'].toString(),
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
@@ -43,25 +57,28 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
           const SizedBox(
             height: 15,
           ),
-           const Text('cO2'),
+           const Text('cO2',
+           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
           Text(
-            test['C02'].toString(),
+            '${test['C02']}  PPM',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
           const SizedBox(
             height: 15,
           ),
-           const Text('Humedad'),
+          const Text('Humedad',
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
           Text(
-            test['humedad'].toString(),
+            '${test['humedad']}  %',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
-          ),
+          ), 
           const SizedBox(
             height: 15,
           ),
-           const Text('Temperatura'),
+           const Text('Temperatura',
+           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
           Text(
-            test['temperatura'].toString(),
+            '${test['temperatura']} °C',
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
           ),
         ],
@@ -93,9 +110,12 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
           test['key'] = snapshot.key;
 
           return listItem(test: test);
+        
         },
       ),
       ),
     );
   }
 }
+
+

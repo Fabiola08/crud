@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:crud/widgets/button.dart';
@@ -101,6 +103,14 @@ class _RegisterState extends State<Register> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
+        // flexibleSpace: ClipRect(
+        //   child: BackdropFilter(
+        //     filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+        //     child: Container(color: Colors.transparent),
+        //     ),
+        //   ),
+        //   elevation: 0,
+        //   backgroundColor: Colors.white,
         //title: const Text("Formulario de registro"),
         backgroundColor: const Color.fromARGB(255, 60, 203, 65),
       ),

@@ -50,6 +50,8 @@ dependencies:
   fluttertoast: ^8.2.1
   animate_do: ^3.0.2
   get: ^4.6.5
+  syncfusion_flutter_gauges: ^21.1.39
+ 
   
   
 

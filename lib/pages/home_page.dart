@@ -1,3 +1,4 @@
+import 'package:crud/pages/grafica.dart';
 import 'package:crud/pages/home_screen.dart';
 import 'package:crud/pages/info_page.dart';
 import 'package:crud/pages/profile.dart';
@@ -24,7 +25,8 @@ class _HomePageState extends State<Home> {
     const HomeScreen(),
     const RealtimeDatabase(),
     //const Profile(),
-     ProfileScreen(),
+    ProfileScreen(),
+    //Dashboard(),
   ];
 
   
@@ -59,6 +61,7 @@ class _HomePageState extends State<Home> {
            icon: const Icon(Icons.logout),
         )
       ],
+
         title: const Text('Air Quality',
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
         centerTitle: true,

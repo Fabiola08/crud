@@ -45,7 +45,8 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              decoration: const BoxDecoration(color: Colors.green),
+              decoration: const BoxDecoration(color: Colors.green,
+              borderRadius: BorderRadius.only(bottomRight: Radius.circular(8.0), bottomLeft: Radius.circular(8.0)),),
             ),
             Positioned(
               bottom: -20,
