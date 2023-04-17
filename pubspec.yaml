@@ -51,6 +51,8 @@ dependencies:
   animate_do: ^3.0.2
   get: ^4.6.5
   syncfusion_flutter_gauges: ^21.1.39
+  flutter_animation_progress_bar: ^2.3.1
+  marquee: ^2.2.3
  
   
   

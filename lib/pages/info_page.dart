@@ -10,7 +10,7 @@ class InfoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('A cerca de la calidad del aire'),
+        title: const Text('Acerca de la calidad del aire'),
         backgroundColor: Colors.green,
       ),
        body: const SingleChildScrollView(
@@ -26,7 +26,7 @@ class InfoPage extends StatelessWidget {
               
               SizedBox(height: 8.0),
 
-              Text('La calidad del aire trata de la composición del aire y de la idoneidad del éste para determinadas aplicaciones.',
+              Text('Se define la inmisión o calidad del aire como la concentración de contaminante que llega a un receptor, más o menos lejano de la fuente de emisión, una vez transportado y difundido por la atmósfera.La capacidad de la atmósfera para diluir las concentraciones de contaminantes es fundamental para preservar una buena calidad del aire, y esto va a venir marcado principalmente por las condiciones meteorológicas. Así, en una atmósfera estable, se propiciará la acumulación de contaminantes y se facilitará la formación de contaminantes secundarios, mientras que en una atmósfera inestable, la difusión de los contaminantes será más eficaz debido a las turbulencias.',
               style: TextStyle(
                 fontWeight: FontWeight.w400,
                 fontSize: 16),
@@ -81,21 +81,21 @@ class InfoPage extends StatelessWidget {
 
                 SizedBox(height: 12.0),
 
-              //   Text('CO2',
-              // style: TextStyle(
-              //   fontWeight: FontWeight.w500,
-              //   fontSize: 18),
-              //   textAlign: TextAlign.center),
+                Text('¿Qué es el Amoníaco?',
+                style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 18),
+                textAlign: TextAlign.center),
               
-              //   SizedBox(height: 8.0),
+                SizedBox(height: 8.0),
 
-              //   Text("Se hace referencia a un gas incoloro y soluble en agua, cuyas moléculas se componen por un átomo de carbono y dos de oxígeno, unidos por enlaces dobles covalentes. La importancia biológica del CO2 radica principalmente en que las plantas lo necesitan para llevar a cabo la fotosíntesis, así como cierto tipo de cyanobacterias para sus procesos de obtención de energía.",
-              //   style: TextStyle(
-              //   fontWeight: FontWeight.w500,
-              //   fontSize: 16),
-              //   textAlign: TextAlign.center),
+                Text("Es un gas incoloro y está compuesto por una parte de nitrógeno (N) y tres partes de hidrógeno (H3). Es producido por la naturaleza en el proceso de descomposición de materia orgánica (plantas, animales, bacterias, desechos de animales) y se puede encontrar en el aire, el suelo y el agua; también es una fuente primordial de nitrógeno para las plantas y los animales. Adicionalmente, es posible encontrarlo en su forma iónica (iones de amoniaco o NH4+) cuando se disuelve con el agua en pozos, ríos, lagos y suelos húmedos.",
+                style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 16),
+                textAlign: TextAlign.start),
 
-              //   SizedBox(height: 12.0),
+                SizedBox(height: 12.0),
 
               //   Text('CO2',
               // style: TextStyle(

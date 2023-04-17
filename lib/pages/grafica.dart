@@ -1,10 +1,17 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
 
-class Grafica extends StatelessWidget {
+class Grafica extends StatefulWidget {
   const Grafica ({super.key});
-  
+
+  @override
+  State<Grafica> createState() => _GraficaState();
+}
+
+class _GraficaState extends State<Grafica> {
 
   @override
   Widget build(BuildContext context) {

@@ -20,9 +20,9 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
 
  Widget listItem({required Map test}) {
     return Container(
-      margin: const EdgeInsets.only(right: 20.0, left: 20.0,top: 30.0),
-      padding: const EdgeInsets.all(5.0),
-      height: 270,
+      margin: const EdgeInsets.only(right: 20.0, left: 20.0,top: 80.0),
+      padding: const EdgeInsets.all(10.0),
+      height: 320,
       decoration: const BoxDecoration(
         color: Colors.green,
         borderRadius: BorderRadius.all(Radius.circular(20.0)), 
@@ -53,7 +53,7 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
            ),
           
           const SizedBox(
-            height: 20,
+            height: 30,
           ),
           Row(
             children: [
@@ -70,7 +70,7 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
           ),
           
           const SizedBox(
-            height: 20,
+            height: 30,
           ),
           
           Row(
@@ -88,7 +88,7 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
           ),
           
           const SizedBox(
-            height: 20,
+            height: 30,
           ),
            
           Row(
@@ -106,7 +106,7 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
           ),
           
           const SizedBox(
-            height: 20,
+            height: 30,
           ),
            Row(
              children: [
@@ -121,7 +121,7 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
              ],
            ),
           
-        ],
+        ], 
       ),
     );
   }
@@ -156,6 +156,7 @@ class _RealtimeDatabaseState extends State<RealtimeDatabase> {
       ),
     );
   }
+  
 }
 
 
